@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script src="angular.min.js"></script>
+        <script>
+            var app=angular.module("myapp",[]);
+            app.controller("mycontroller",function ($scope,$http) {
+                $scope.findAll=function () {
+                    $http.get("").success()
+                }
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
