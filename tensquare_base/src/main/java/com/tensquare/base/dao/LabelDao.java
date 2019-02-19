@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 
 public interface LabelDao extends JpaRepository<Label,String>, JpaSpecificationExecutor<Label> {
-
+    public void streamAllByCount();
 }
